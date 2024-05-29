@@ -1,0 +1,490 @@
+{
+  "settings": {
+    "name": "topkamdzwig.pl",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#fce30d"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.18",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "cookiesAlert": {
+      "customDialogSelector": false,
+      "colorText": "#424a4d",
+      "colorBg": "#ffffff",
+      "colorButton": "#fce30d",
+      "rejectColor": "#ffffff",
+      "colorLink": "#424a4d",
+      "underlineLink": true,
+      "opacityOverlay": "0",
+      "bgOpacity": "100",
+      "text": "W celu poprawy jakości naszych usług, stosujemy na tej stronie pliki cookies. Więcej szczegółów na ten temat znajdziesz na stronie <a href=’polityka.html’>Polityka Prywatności</a>.",
+      "textButton": "akceptuję",
+      "rejectText": "REJECT"
+    },
+    "favicon": "@PROJECT_PATH@/assets/images/przekrj-bridon-50db-128x128.png",
+    "mbrsiteDomain": "g81roszywj",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "gdpr": {
+      "colorText": "#000000",
+      "colorLink": "#fce30d",
+      "underlineLink": false,
+      "text": "Aby kontynuować, musisz zgodzić się z warunkami naszego <a href=’regulamin.html’>Regulaminu</a> oraz <a href=’polityka.html’>Polityką Prywatności</a>"
+    },
+    "publishEditFolder": false,
+    "uniqCompNum": 11,
+    "versionPublish": "5.9.18"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "TopKamDźwig - Kamil Topolski",
+        "meta_descr": "Usługi dźwigowe z Małopolski. Dźwig 110 Ton Liebherr LTM 1110",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"4\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\" selected>Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/ramie%20dzwigu-1366x768.jpg\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.1\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>TopKam<br>Dźwig</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Usługi dźwigowe dla Ciebie.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ue95SQtmaJ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header3-1"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".content-wrapper": {
+              "background": "@cardColor",
+              "@media (max-width: 991px)": {
+                ".row": {
+                  "flex-direction": "column-reverse"
+                },
+                ".image-wrapper": {
+                  "margin-bottom": "2rem"
+                }
+              },
+              "@media (max-width: 767px)": {
+                "padding": "1rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "5rem 3rem",
+                ".text-wrapper": {
+                  "padding-right": "2rem"
+                }
+              }
+            },
+            ".image-wrapper img": {
+              "width": "100%",
+              "object-fit": "cover"
+            }
+          },
+          "_name": "features16",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features16\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#fce30d\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Dźwig Liebherr LTM 1110</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Oferujemy usługi dźwigiem mobilnym o maksymalnym udźwigu do 110 ton. Zapewniamy kompleksową obsługę, od wielu lat z powodzeniem. Realizujemy szeroki wachlarz zadań, skutecznie odpowiadając na najbardziej skomplikowane potrzeby sektora budowlanego, przemysłowego, mieszkaniowego, dużych konstrukcji oraz infrastruktury publicznej. Dodatkowo, przy każdym projekcie nasz doświadczony zespół oferuje doradztwo w zakresie wyboru odpowiedniego sprzętu, logistyki i planowania prac dźwigowych.</p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-warning\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n                    </div>\n                </div>\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img src=\"@PROJECT_PATH@/assets/images/topkamdzwig-1160x652.jpg\" alt=\"Dźwig TopKam\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ue96ItQSef",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features16-2"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".content-wrapper": {
+              "background": "@cardColor",
+              "@media (max-width: 991px)": {
+                ".image-wrapper": {
+                  "margin-bottom": "2rem"
+                }
+              },
+              "@media (max-width: 767px)": {
+                "padding": "1rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "5rem 3rem",
+                ".text-wrapper": {
+                  "padding-left": "2rem"
+                }
+              }
+            },
+            ".image-wrapper img": {
+              "width": "100%",
+              "object-fit": "cover"
+            },
+            ".card-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "features17",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features17\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#000000\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img src=\"@PROJECT_PATH@/assets/images/hak-i-zawiesie-1366x768.jpg\" alt=\"Mobirise Website Builder\">\n                    </div>\n                </div>\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Szybko, sprawnie, bezpiecznie!</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Chcesz wynająć dźwig z operatorem? Potrzebujesz porady?<br>Napisz do nas e-mail lub zadzwoń!<br><br><br><br>Adres:<br>Rytro 663\n<br>33-343 Rytro<br></p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                Learn more\n                            </a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ue9CBzHfVo",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features17-5"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-iconfont": {
+              "display": "block",
+              "font-size": "5rem",
+              "color": "@primaryColor",
+              "margin-bottom": "2rem"
+            },
+            ".card-wrapper": {
+              "padding": "3rem",
+              "background": "@cardColor",
+              "border-radius": "4px"
+            },
+            "@media (max-width: 992px)": {
+              ".card-wrapper": {
+                "margin-bottom": "2rem"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".card-wrapper": {
+                "padding": "3rem 1rem"
+              }
+            },
+            ".card-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "contacts1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"contacts1\" group=\"Contacts\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Link\" name=\"showLink\" checked>\n        <input type=\"color\" title=\"BG\" name=\"cardColor\" value=\"#000000\" selected>\n        <input type=\"checkbox\" title=\"Icon\" name=\"showIcon\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>Kontakt</b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                Z przyjemnością odpowiemy na wszystkie pytania</h4>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"card col-12 col-lg-6\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-letter mobi-mbri\" mbr-if=\"showIcon\" style=\"color: rgb(252, 227, 13); fill: rgb(252, 227, 13);\"></span>\n                        </div>\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-2\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            <b>Email</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mb-2\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Odpowiemy najszybciej jak tylko możemy</p>\n                        <h5 class=\"link mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLink\" data-app-selector=\".link\"><a href=\"mailto:topkamdzwig@wp.pl\" class=\"text-warning\">Wyślij nam wiadomość</a></h5>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-lg-6\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-mobile-2 mobi-mbri\" mbr-if=\"showIcon\" style=\"color: rgb(252, 227, 13); fill: rgb(252, 227, 13);\"></span>\n                        </div>\n                        <h4 class=\"card-title mbr-fonts-style align-center mb-2\" mbr-theme-style=\"display-2\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            <b>Telefon</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style mb-2\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Pon - Pią 08:00 - 16:00</p>\n                        <h5 class=\"link mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLink\" data-app-selector=\".link\"><a href=\"tel:+48692277444\" class=\"text-warning\">+48 692 277 444</a></h5>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ueajWuisMC",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "contacts1-6"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden"
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2024 TopKamDźwig Kamil Topolski - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ue9CsZ3NF5",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {},
+          "_anchor": "footer7-4"
+        }
+      ]
+    },
+    "polityka.html": {
+      "settings": {
+        "title": "Polityka prywatności",
+        "order": "2",
+        "meta_descr": "Polityka prywatności strony TopKamDźwig."
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "content4",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content4\" group=\"Content\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"10\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Polityka prywatności</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">POLITYKA PRYWATNOŚCI \n<div> \n</div><div>Niniejsza Polityka stanowi podstawową informację o celach, sposobach przetwarzania oraz bezpieczeństwie Twoich danych osobowych, jako użytkownika strony: topkamdzwig.pl (zwanej dalej Stroną). Zapoznając się z Polityką prywatności dowiesz się kto jest administratorem Twoich danych osobowych, jakie dane osobowe są przez Stronę zbierane, w jakich celach są wykorzystywane oraz jak są chronione. \n</div><div>§1. Informacje podstawowe \n</div><div>1.\tAdministratorem Twoich danych osobowych jest: TopKamDźwig z siedzibą przy: ul. Rytro 663, 33-343 Rytro\n</div><div>2.\tKontakt z Administratorem jest możliwy za pośrednictwem: \n</div><div>1.\tpoczty e-mail: topkamdzwig@wp.pl \n</div><div>2.\ttelefonicznie: +48 692 277 444\n</div><div>Z regulaminem świadczenia usług drogą elektroniczną możesz się zapoznać tutaj: https://topkamdzig.pl/regulamin\n</div><div>§2. Zasady przetwarzania danych \n</div><div>1.\tAdministrator przetwarza dane osobowe z poszanowaniem następujących zasad: \n</div><div>1.\tw oparciu o podstawę prawną i zgodnie z prawem (legalizm); \n</div><div>2.\trzetelnie i uczciwie (rzetelność);  \n</div><div>3.\tw sposób przejrzysty dla osoby, której dane dotyczą (transparentność); \n</div><div>4.\tw konkretnych celach i nie „na zapas” (minimalizacja); \n</div><div>5.\tnie więcej niż potrzeba (adekwatność); \n</div><div>6.\tz dbałością o prawidłowość danych (prawidłowość); \n</div><div>7.\tnie dłużej niż potrzeba (czasowość); \n</div><div>8.\tzapewniając odpowiednie bezpieczeństwo danych (bezpieczeństwo). \n</div><div>§3. Cele, podstawy prawne i zakres przetwarzania danych \n</div><div>1.\tTwoje dane będziemy przetwarzać: \n</div><div>1.\tw celach kontaktowych, aby udzielić ci odpowiedzi na Twoją wiadomość przesłaną nam bezpośrednio drogą e-mailową na podstawie realizacji prawnie uzasadnionego interesu Administratora związanego z koniecznością udzielenia Ci odpowiedzi. \n</div><div>2.\tw celach marketingowych, jeśli zapisałeś się na newsletter,  \n</div><div>3.\tw celu realizacji Twojego zamówienia, na podstawie zawartej umowy sprzedaży (poprzez skuteczne złożenie zamówienia dochodzi do zawarcia umowy, w której my występujemy w roli sprzedawcy, a Ty kupującego), \n</div><div>4.\tw celu utworzenia i prowadzenia dla Ciebie konta użytkownika, \n</div><div>5.\tw celach umożliwienia Tobie komentowania materiałów zamieszczanych na naszej stronie internetowej na podstawie realizacji prawnie uzasadnionego interesu Administratora związanego z możliwością komentowania zawartości strony internetowej.  \n</div><div>6.\tw celach statystycznych, analitycznych oraz monitorowania ruchu na Stronie przy użyciu plików cookies, na podstawie realizacji prawnie uzasadnionego interesu Administratora związanego z prawidłowym działaniem i funkcjonowaniem Strony oraz prowadzeniem analizy ruchu na stronie. \n</div><div>2.\tPrzetwarzamy Twoje dane w zakresie: \n</div><div>1.\tjeśli prześlesz nam wiadomość e-mail to będziemy przetwarzać dane, które będą w niej zawarte. Przekazanie nam danych w e-mailu następuje dobrowolnie. W każdym czasie możesz zwrócić się do nas z prośbą o usunięcie tych danych. \n</div><div>2.\tjeśli zapiszesz się na newsletter to będziemy przetwarzać Twój adres e-mail. Zapis na newsletter jest dobrowolny i w każdym czasie możesz z niego zrezygnować.  \n</div><div>3.\tjeśli zakupisz na stronie produkty to, aby zrealizować Twoje zamówienie będziemy przetwarzać: Twoje imię i nazwisko, adres zamieszkania, adres dostawy, numer telefonu, adres e-mail i inne dane zawarte w formularzu zamówienia, niezbędne do wywiązania się przez nas z umowy.  Podanie tych danych stanowi warunek złożenia zamówienia i zawarcia umowy.  \n</div><div>4.\tw przypadku założenia konta użytkownika będziemy przetwarzać dane, które podasz w formularzu rejestracyjnym, a w szczególności: Twoje imię i nazwisko, adres e-mail, nr telefonu, adres zamieszkania, płeć. Podanie imienia, nazwiska, adresu e-mail stanowi warunek założenia konta użytkownika.  \n</div><div>5.\tjeśli postanowisz opublikować komentarz na Stronie to będziemy przetwarzać Twoje imię oraz adres e-mail. Przekazanie nam danych w ten sposób następuje dobrowolnie. W każdym czasie możesz usunąć swój komentarz.  \n</div><div>6.\tpozostałe dane, które Administrator przetwarza to adres IP i inne dane zapisywane w plikach cookies, które służą Administratorowi do analizy korzystania przez Ciebie i innych użytkowników Strony. Przetwarzanie danych w tym zakresie może zostać wstrzymane po złożeniu przez Ciebie sprzeciwu. \n</div><div>§4. Odbiorcy danych oraz zamiar przekazywania danych do Państwa spoza  \n</div><div>EOG lub organizacji międzynarodowej \n</div><div>1.\tOdbiorcami Twoich danych osobowych są:  \n</div><div>1.\tpodmiot dostarczający oprogramowanie do analizy ruchu naszej stronie; \n</div><div>2.\tpodmiot zajmujący się administrowaniem Stroną;   \n</div><div>3.\tfirmy przewozowe, za pośrednictwem których realizujemy dostawy;  \n</div><div>4.\tpośrednicy płatności internetowych z których usług korzystamy;  \n</div><div>5.\tjeśli zapisałeś się na newsletter Twoje dane będą przekazane do podmiotu prowadzącego nasz newsletter;  \n</div><div>6.\tjeśli napisałeś komentarz na stronie Twoje dane będą przekazane do podmiotu obsługującego moduł komentarzy;  \n</div><div>2.\tTwoje dane nie są przekazywane do Państwa spoza EOG lub organizacji międzynarodowej.  \n</div><div>§5. Termin przechowywania danych \n</div><div>Nie jesteśmy w stanie ustalić przez jaki okres przetwarzać będziemy Twoje dane osobowe.  \n</div><div>Dane przekazane nam w związku ze złożonym zamówieniem i sprzedażą towarów/produktów przetwarzamy przez 6 lat, celem wywiązania się z ciążących na nas obowiązkach podatkowych.  \n</div><div>Jeśli przekazałeś nam swoje dane w wiadomości e-mail w celach kontaktowych to Twoje dane będziemy przetwarzać do momentu złożenia przez Ciebie żądania usunięcia tych danych lub sprzeciwu wobec przetwarzania, ale również w przypadku, w którym uznamy, że zrealizowaliśmy prawnie uzasadniony interes Administratora. \n</div><div>Jeśli postanowisz założyć konto użytkownika, Twoje dane będziemy przetwarzać do czasu usunięcia przez Ciebie tego konta.  \n</div><div>Jeśli zapiszesz się na newsletter to Twoje dane będziemy przetwarzać do czasu cofnięcia przez Ciebie subskrypcji.  \n</div><div>Jeżeli skomentowałeś któryś z naszych materiałów to twoje dane będziemy przetwarzać do momentu usunięcia przez Ciebie lub przez nas Twojego komentarza.  \n</div><div>§6. Prawa użytkowników \n</div><div>1.\tW związku z przetwarzaniem Twoich danych przysługują Ci następujące prawa:  \n</div><div>1.\tdostępu do treści swoich danych oraz  \n</div><div>2.\tprawo ich sprostowania, usunięcia, ograniczenia przetwarzania,  \n</div><div>3.\tprawo do przenoszenia danych,  \n</div><div>4.\tprawo wniesienia sprzeciwu,  \n</div><div>5.\tprawo do cofnięcia zgody na ich przetwarzanie w dowolnym momencie i w dowolnej formie, chyba że przetwarzanie Państwa danych odbywa się w celu wykonywania umowy przez Administratora, w celu wywiązania się przez Administratora z obowiązków prawnych względem instytucji państwowych lub w celu realizacji prawnie uzasadnionych interesów Administratora.  \n</div><div>2.\tMasz także prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (na adres Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa).  \n</div><div>3.\tWięcej informacji w przedmiocie ochrony danych osobowych mogą Państwo otrzymać na stronie internetowej Urzędu Ochrony Danych Osobowych: www.uodo.gov.pl \n</div><div>§7. Pliki cookies \n</div><div>1.\tPliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym, czyli Twoim komputerze, laptopie lub smartfonie, w zależności jakiego urządzenia używasz do oglądania Strony. Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer. Sam możesz zadecydować o formie wykorzystania cookies – ustawienia te są dostępne w każdej przeglądarce internetowej. \n</div><div>2.\tPliki cookies służą przede wszystkim twojej wygodzie – dzięki ich użyciu, znacznie skraca się czas ładowania strony podczas kolejnych odwiedzin. \n</div><div>3.\tCechy plików cookies: \n</div><div>1.\tdostosowują zawartość stron internetowych serwisu do Użytkownika. Optymalizują poruszanie Użytkownika na stronie, w szczególności pliki te pozwalają rozpoznać urządzenie, za pomocą, którego wyświetlana jest strona i tak ustawić jej parametry, by nawigacja nie sprawiała problemów i zoptymalizowana pod względem indywidualnych potrzeb Użytkownika.  \n</div><div>2.\tpozwalają wyświetlić stronę internetową, dostosowaną do Twoich indywidualnych potrzeb; \n</div><div>3.\ttworzą statystyki, dzięki którym Administrator wie, które treści cieszą się zainteresowaniem Użytkowników. Pozwala to na ciągłe ulepszanie strony i taką konstrukcję treści, która będzie odpowiadała osobom odwiedzającym stronę. \n</div><div>4.\tpozwalają na wielokrotne wykorzystanie opcji logowania przez Użytkownika, co jest dla Ciebie dużo wygodniejsze, gdyż podczas przemieszczania się po stronie i wielokrotnych odwiedzin nie jesteś zmuszony do każdorazowego wpisywania loginu i hasła. \n</div><div>4.\tW ramach Strony stosowane są dwa zasadnicze rodzaje plików cookies: „sesyjne” (session cookies) oraz „stałe” (persistent cookies). Cookies „sesyjne” są plikami tymczasowymi, które przechowywane są w urządzeniu końcowym Użytkownika do czasu wylogowania, opuszczenia strony internetowej lub wyłączenia oprogramowania (przeglądarki internetowej). „Stałe” pliki cookies przechowywane są w urządzeniu końcowym Użytkownika przez czas określony w parametrach plików cookies lub do czasu ich usunięcia przez Użytkownika. \n</div><div>5.\tUżytkownik może w każdym momencie usunąć pliki cookies. \n</div><div>6.\tWprowadzone przez użytkownika ograniczenia stosowania plików cookies mogą wpłynąć na niektóre funkcjonalności Strony, znacznie utrudniając swobodne korzystanie ze wszystkich jego opcji.  \n</div><div>7.\tPliki cookies są zamieszczane w urządzeniu końcowym Użytkownika i wykorzystywane mogą być również przez współpracujących z operatorem Strony reklamodawców oraz innych partnerów. Użytkownik jednakże w każdej chwili może je usunąć. \n</div><div>8.\tWięcej szczegółowych informacji na temat plików cookies dostępnych jest pod adresem http://wszystkoociasteczkach.pl lub w sekcji „Pomoc” w menu przeglądarki internetowej. \n</div><div>9.\tJeżeli masz wątpliwości, co do ustawień plików cookies, skontaktuj się z operatorem swojej przeglądarki internetowej. \n</div><div>10.\tJeżeli nie zgadzasz się na wykorzystywanie cookies przez Stronę, opuść ją lub aktywuj odpowiednie ustawienia w swojej przeglądarce internetowej. \n</div><div><br></div><div>\n</div><div> \n</div><div> \n</div><div> \n</div><div> \n</div><div> \n</div><div> \n</div><div> \n</div><div> \n</div><div> \n</div><div> \n</div><div> \n</div><div>\n</div><div> \n</div><div> \n</div></h4>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\">LEARN MORE</a>\n                    <a class=\"btn btn-primary-outline\" href=\"https://mobiri.se\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ueaAph90cH",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content4-9"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden"
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2024 TopKamDźwig Kamil Topolski - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ue9CsZ3NF5",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {},
+          "_anchor": "footer7-7"
+        }
+      ]
+    },
+    "regulamin.html": {
+      "settings": {
+        "title": "Regulamin strony",
+        "order": "1",
+        "meta_descr": "Regulamin strony TopKamDźwig"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_name": "content4",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content4\" group=\"Content\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"10\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Regulamin</b></h3>\n                <h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">REGULAMIN ŚWIADCZENIA USŁUG DROGĄ ELEKTRONICZNĄ TopKamDźwig Kamil Topolski<div>\n</div><div>Art. 1. [Informacje podstawowe]\n</div><div>1.\tNiniejszy regulamin to regulamin świadczenia usług elektronicznych za pośrednictwem strony internetowej: www.topkamdzwig.pl (zwanej dalej „Stroną”).\n</div><div>2.\tWłaścicielem i podmiotem świadczącym usługi elektroniczne poprzez Stronę jest: TopKamDźwig z siedzibą przy: ul. Rytro 663, 33-343 Rytro (zwany dalej: „Usługodawcą“).\n</div><div>3.\tZ Usługodawcą możesz skontaktować za pośrednictwem: \n</div><div>1)\tpoczty e-mail: topkamdzig@wp.pl\n</div><div>2)\ttelefonicznie: +48 692 277 444\n</div><div>4.\tNiniejszy regulamin został przyjęty w dniu 02.01.2024 r.\n</div><div>5.\tUsługodawca zastrzega sobie prawo zmiany Regulaminu. \n</div><div>Art. 2. [Rodzaje i zakres świadczonych usług]\n</div><div>1.\tStrona zawiera podstawowe informacje o prowadzonej przez Usługodawcę działalności: - usługi dźwigowe;\n</div><div>2.\tZa pośrednictwem Strony Usługodawca świadczy usług płatne i bezpłatne:\n</div><div>1)\tskładania zamówień on-line; \n</div><div>2)\tzałożenie konta użytkownika;\n</div><div>3)\tsubskrypcja newslettera z informacjami handlowymi (promocjami, ofertami specjalnymi); \n</div><div>4)\tpublikacji komentarzy; \n</div><div>3. Usługi płatne są oznaczone w taki sposób, aby nie było wątpliwości, że skorzystanie z nich łączy się z obowiązkiem zapłaty.\n</div><div>Art. 3. [Warunki techniczne do korzystania z usług]\n</div><div>1.\tW celu prawidłowego korzystania ze Strony powinieneś posiadać: \n</div><div>1)\turządzenie (komputer PC, tablet, smartphone) z połączeniem internetowym, \n</div><div>2)\tprzeglądarkę internetową, \n</div><div>3)\tpełną zdolność do czynności prawnych, w celu dokonania zakupów na Stronie, \n</div><div>4)\tadres poczty e-mail, w celu dokonania zakupów na Stronie lub zapisania się na newsletter,\n</div><div>5)\tnumer telefonu i adres poczty e-mail w celu złożenia zamówienia on-line. \n</div><div>2.\tNa Stronie obowiązuje zakaz publikacji treści o charakterze bezprawnym.  \n</div><div>Art. 4 [Newsletter]\n</div><div>1.\tUsługa w postaci subskrypcji newslettera jest darmowa. Polega ona na wysyłaniu przez Usługodawcę informacji handlowych o promocjach i specjalnych ofertach Usługodawcy. Zapisując się na newsletter wyrażasz zgodę na przesyłanie przez Usługodawcę informacji handlowych na podany przez Ciebie adres e-mail. \n</div><div>2.\tZrezygnować z newslettera możesz w każdej korzystając z opcji wypisania się zamieszczonej w wiadomości newsletterowej lub kontaktując się z Usługodawcą. \n</div><div>Art. 5 [Komentarze]\n</div><div>1.\tNa Stronie możesz publikować komentarze. \n</div><div>2.\tUsługodawca zastrzega sobie prawo do usuwania komentarzy bez podawania przyczyny. \n</div><div>Art. 6 [Zgłaszanie i rozpatrywanie reklamacji] \n</div><div>1.\tKażdej osobie korzystającej ze Strony przysługuje prawo wniesienia reklamacji. \n</div><div>2.\tWszystkie reklamacje, uwagi i zastrzeżenia możecie kierować na adres: topkamdzig@wp.pl.\n</div><div>3.\tReklamacja powinna zawierać:\n</div><div>1)\tTwoje imię oraz adres e-mail, \n</div><div>2)\tdokładny opis i powód reklamacji,\n</div><div>3)\tTwoje żądania, propozycje i wnioski. \n</div><div>4.\tPostępowanie reklamacyjne trwa 14 dni. Dniem rozpoznania reklamacji jest dzień złożenia odpowiedzi drogą mailową przez Usługodawcę odpowiedź na reklamację. \n</div><div>Art. 10 [Rozwiązywanie sporów] \n</div><div>1.\tAkceptując ten regulamin zgadzasz się, że w przypadku zaistnienia sporu spróbujemy go rozwiązać wspólnie i polubownie. Czas na przeprowadzenie negocjacji wynosił będzie 3 miesiące od dnia zgłoszenia roszczeń przez TopKamDźwig. lub przez Ciebie. Jeśli w zakreślonym okresie nie znajdziemy rozwiązania na zakończenie sporu to swoje roszczenia będziemy mogli złożyć sądowi powszechnemu. \n</div><div>2.\tW przypadku świadczenia usług na rzecz konsumenta mającego miejsce zamieszkania w innym kraju niż Polska, umawiamy się, że sprawa zostanie rozpoznana wg prawa polskiego. Porozumienie to nie pozbawia Cię ochrony przyznanej Ci na podstawie przepisów, których nie można wyłączyć w drodze umowy i na mocy prawa. \n</div><div>3.\tWyrażamy zgodę na pozasądowe rozwiązywanie sporów. Jeśli chcesz zgłosić przeciwko TopKamDźwig Kamil Topolski jakąś sprawę może to zrobić elektronicznie pod adresem: https://webgate.ec.europa.eu/odr/main/index.cfm?event=main.home.show&amp;lng=PL \n</div><div>Art. 11 [Ochrona danych osobowych] \n</div><div>1.\tUsługodawca jest administratorem danych w rozumieniu przepisów o ochronie danych osobowych (RODO i inne). Informacje o zasadach przetwarzania danych przez Usługodawcę zawarte zostały w Polityce prywatności dostępnej pod adresem:  https://topkamdzwig.pl/polityka.html.\n</div><div><br></div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div><div>\n</div></h4>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\">LEARN MORE</a>\n                    <a class=\"btn btn-primary-outline\" href=\"https://mobiri.se\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ueaAKxyrux",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content4-a"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden"
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2024 TopKamDźwig Kamil Topolski - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "ue9CsZ3NF5",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {},
+          "_anchor": "footer7-8"
+        }
+      ]
+    }
+  }
+}
